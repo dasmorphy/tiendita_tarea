@@ -4,7 +4,9 @@
     "description": "Sistema de Facturacion",
     "main": "servidor.js",
     "scripts": {
-        "start": "node servidor.js",
+        "start": "babel-node servidor.js --exec",
+        "dev": "nodemon servidor.js",
+        "devbabel": "nodemon servidor.js --exec babel-node",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Guillermo Pizarro",
